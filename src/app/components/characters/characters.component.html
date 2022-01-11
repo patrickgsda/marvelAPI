@@ -1,0 +1,13 @@
+<app-search></app-search>
+<section>
+  <h1 *ngIf="characters != undefined">Todos os Personagens</h1>
+  <h1 *ngIf="characters == undefined">Loading...</h1>
+</section>
+
+<section>
+  <div *ngIf="characters != undefined" class="card__header">
+    <div  *ngFor="let character of characters">
+      <app-card-character [cardCharacter]="character"></app-card-character>
+    </div>
+  </div>
+</section>

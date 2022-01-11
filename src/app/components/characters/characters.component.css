@@ -1,0 +1,21 @@
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.card__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 35px auto;
+}
+
+@media (min-width: 768px) {}

@@ -1,0 +1,20 @@
+<div class="card__content">
+  <h1 *ngIf="char == undefined">Loading...</h1>
+  <section>
+    <div class="card__itens">
+      <h1>{{char?.name}}</h1>
+      <img *ngIf="char != undefined" class="card__item__img" src="{{char?.path}}">
+      <div class="card__itens__texts">
+        <span>{{char?.description}}</span>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="card__comics">
+  <h2 *ngIf="char != undefined">Lista de Quadrinhos</h2>
+      <div *ngFor="let comic of char?.comics">
+        <p>{{comic.name}}</p>
+      </div>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,32 @@
+.section__input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+input {
+  padding: 10px;
+  border-radius:  8px 0 0 8px;
+  border: 1px solid black;
+}
+
+button {
+  height:100%;
+  color: white;
+  background-color: #fd0000;
+  border: 1px solid transparent;
+  font-weight: bold;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  transition: all 0.7s;
+}
+
+button:hover {
+  filter: brightness(1.5);
+}
+
+button:active {
+  filter: brightness(2);
+}
+

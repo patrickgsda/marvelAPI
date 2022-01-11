@@ -1,0 +1,20 @@
+<div class="card__content">
+  <div class="card__itens">
+    <h1>{{char?.name}}</h1>
+    <img *ngIf="char?.name.length > 0" class="card__item__img" src="{{char?.path}}">
+    <div class="card__itens__texts">
+      <span>{{char?.description}}</span>
+    </div>
+  </div>
+  <div class="card__comics">
+    <h2 *ngIf="char?.name.length > 0">Lista de Quadrinhos</h2>
+    <div *ngFor="let comic of char?.comics">
+      <p>{{comic.name}}</p>
+    </div>
+    <div>
+      <h1 *ngIf="char?.name.length < 1">
+        O personagem pesquisado não foi encontrado, <a [routerLink]="['/personagens']">clique aqui para voltar!</a>
+      </h1>
+    </div>
+  </div>
+</div>

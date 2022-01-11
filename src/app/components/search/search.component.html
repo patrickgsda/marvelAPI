@@ -1,0 +1,8 @@
+<section class="section__input">
+  <div class="input__search">
+    <input type="text" class="form-control" placeholder="Pesquise aqui" id="name" [(ngModel)]="name">
+  </div>
+  <div class="form-group">
+    <button [routerLink]="['/personagens/pesquisa', name]" class="btnSubmit">Pesquisar</button>
+  </div>
+</section>

@@ -1,0 +1,84 @@
+h2 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: white;
+  margin: 20px;
+  transition: opacity 1s;
+  position: absolute;
+  font-weight: bold;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.card {
+  height: 450px;
+  width: 300px;
+  background: grey;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  background: black;
+  box-shadow: 0 70px 63px -60px #000000;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+
+
+.card:hover {
+  filter: brightness(1.2);
+  transition: all 1s;
+}
+
+
+.card:hover {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@media (min-width: 768px) {
+  h2 {
+    opacity: 0;
+  }
+
+  .card:hover h2 {
+    opacity: 1;
+  }
+
+}
